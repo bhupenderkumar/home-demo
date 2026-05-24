@@ -3,39 +3,39 @@ export default function About() {
     <section className="section">
       ```jsx
 import Head from 'next/head';
-import Link from 'next/link';
 
-const Home = () => {
+function AboutPage() {
   return (
     <>
       <Head>
-        <title>About Us | Home in Houston, TX</title>
-        <meta name="description" content="Learn more about Home in Houston, TX" />
+        <title>About Us - Home in Houston, TX</title>
+        <meta name="description" content="Learn more about Home in Houston, a premier private school in Texas." />
       </Head>
-      <main>
-        <section className="hero">
-          <h1>About Us</h1>
-          <p>Welcome to Home in Houston, TX. We are a private school dedicated to providing a high-quality education to our students.</p>
-        </section>
-        <section className="about-section">
-          <h2>Our Mission</h2>
-          <p>We strive to create a supportive and inclusive environment that fosters academic excellence, creativity, and character development. Our mission is to inspire our students to become confident, compassionate, and critical thinkers who are prepared to succeed in an ever-changing world.</p>
-        </section>
-        <section className="contact-section">
-          <h2>Get in Touch</h2>
-          <p>Would you like to learn more about Home in Houston, TX? Please feel free to reach out to us at:</p>
-          <p>Email: <Link href="mailto:info@houstonprivateschools.org">info@houstonprivateschools.org</Link></p>
-          <p><Link href="/">Back to Home</Link></p>
-        </section>
+      <main className="container mx-auto p-4 md:p-12">
+        <h1 className="text-3xl font-bold mb-4">About Us</h1>
+        <p>
+          Welcome to Home in Houston, a premier private school dedicated to providing a world-class education to students in a supportive and inclusive environment. Our experienced faculty and staff are committed to helping each student reach their full potential and achieve their academic and personal goals.
+        </p>
+        <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+        <p>
+          Our mission at Home in Houston is to foster a love of learning, creativity, and critical thinking in our students. We strive to create a safe and nurturing environment that encourages students to explore their interests, develop their talents, and become confident and compassionate individuals.
+        </p>
+        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <p>
+          If you have any questions or would like to learn more about our school, please don't hesitate to reach out to us.
+        </p>
+        <p>
+          Email: <a href="mailto:info@houstonprivateschools.org" className="text-blue-600 hover:text-blue-800">info@houstonprivateschools.org</a>
+        </p>
       </main>
     </>
   );
-};
+}
 
-export default Home;
+export default AboutPage;
 ```
 
-This JSX code defines a Next.js page component for the "About" page of the Home in Houston, TX website. The page includes a hero section with a title and description, an "About Us" section with more information about the school, and a "Get in Touch" section with contact information and a link back to the home page. The component uses Head and Link components from Next.js to set the page title and metadata, as well as to create email links and a link back to the home page.
+This JSX code defines a basic about page for Home in Houston, TX. The page includes a title, meta description, main content, and contact information. The content is written in a simple and clear manner, providing an overview of the school's mission and values. The code uses a responsive design with class names and a basic layout to make it easy to read and understand.
     </section>
   );
 }
