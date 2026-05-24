@@ -2,58 +2,36 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        ```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Private School in Houston, TX</title>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Home</h1>
-        <p>A private school in Houston, TX, dedicated to fostering academic excellence, creativity, and personal growth in a nurturing environment.</p>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Empowering Minds, One Student at a Time</h2>
-            <p>At Home, we believe that every student has the potential to excel. Our experienced faculty, innovative curriculum, and commitment to individualized attention make us the premier choice for families seeking a private education in Houston.</p>
-        </section>
-        <section class="feature-section">
-            <h2>Our Key Features</h2>
-            <ul>
-                <li>
-                    <h3>Academic Excellence</h3>
-                    <p>We offer a rigorous and engaging curriculum that prepares students for success in college and beyond.</p>
-                </li>
-                <li>
-                    <h3>Small Class Sizes</h3>
-                    <p>Our low student-to-teacher ratio ensures that each student receives the attention and support they need to thrive.</p>
-                </li>
-                <li>
-                    <h3>State-of-the-Art Facilities</h3>
-                    <p>From cutting-edge technology to modern classrooms and recreational spaces, our campus is designed to inspire learning and creativity.</p>
-                </li>
-                <li>
-                    <h3>Extracurricular Opportunities</h3>
-                    <p>We offer a wide range of clubs, sports teams, and activities that help students develop new skills and build lasting relationships.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="call-to-action">
-            <h2>Take the First Step Towards a Brighter Future</h2>
-            <p>Apply now to Home, and discover a world of possibility and achievement. Contact us to schedule a tour or learn more about our admissions process.</p>
-            <button>Contact Us</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Home Private School. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-```
+        <div class="hero">
+  <div class="container">
+    <h1 class="hero-headline">Empowering Young Minds, One Student at a Time</h1>
+    <p class="hero-description">For over 50 years, Home Private School has been a leader in education, providing a supportive and inclusive environment that fosters academic excellence, creativity, and personal growth. Our experienced faculty, cutting-edge facilities, and rigorous curriculum equip students with the skills and confidence to succeed in an ever-changing world.</p>
+    <a class="btn btn-primary" href="#about-us">Learn More</a>
+  </div>
+</div>
+
+<div class="features">
+  <div class="container">
+    <h2>What Sets Us Apart</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Academic Excellence</h3>
+        <p>Our rigorous curriculum and experienced faculty ensure that students receive a world-class education, preparing them for success in college and beyond.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-users"></i>
+        <h3>Inclusive Community</h3>
+        <p>At Home Private School, we value diversity and inclusivity, creating a supportive environment where students from all backgrounds can thrive.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="fas fa-cog"></i>
+        <h3>State-of-the-Art Facilities</h3>
+        <p>Our modern facilities and cutting-edge technology provide students with the tools and resources they need to succeed in a rapidly changing world.</p>
+      </div>
+    </div>
+  </div>
+</div>
       </section>
     </>
   );
