@@ -1,51 +1,54 @@
 export default function Download() {
   return (
     <section className="section">
-      ```jsx
+      ```javascript
+// pages/download.js
+
 import Head from 'next/head';
-import Link from 'next/link';
 
 const DownloadPage = () => {
   return (
     <>
       <Head>
-        <title>Home in Houston, TX - Download</title>
-        <meta name="description" content="Download information for Home in Houston, TX" />
+        <title>Download - Home in Houston, TX</title>
+        <meta name="description" content="Download resources from Home in Houston, TX" />
       </Head>
 
-      <main className="container py-4">
-        <h1 className="mb-4">Download Information for Home in Houston, TX</h1>
+      <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+        <h1 className="text-3xl font-bold mb-4">Download</h1>
 
-        <section>
-          <h2>Download Our Brochure</h2>
-          <p>Get to know more about Home in Houston, TX by downloading our brochure.</p>
-          <Link href="/download/brochure.pdf">
-            <a className="btn btn-primary">Download Brochure</a>
-          </Link>
-        </section>
+        <h2 className="text-2xl font-bold mb-4">Forms and Documents</h2>
+        <ul>
+          <li>
+            <a href="#" className="underline">Application Form (PDF)</a>
+          </li>
+          <li>
+            <a href="#" className="underline">Health Form (PDF)</a>
+          </li>
+          <li>
+            <a href="#" className="underline">Emergency Contact Form (PDF)</a>
+          </li>
+        </ul>
 
-        <section>
-          <h2>Application Forms</h2>
-          <p>Download and fill out our application forms to get started.</p>
-          <Link href="/download/application-forms.pdf">
-            <a className="btn btn-primary">Download Application Forms</a>
-          </Link>
-        </section>
+        <h2 className="text-2xl font-bold mb-4">Other Resources</h2>
+        <ul>
+          <li>
+            <a href="#" className="underline">Parent-Teacher Conference Guide (PDF)</a>
+          </li>
+          <li>
+            <a href="#" className="underline">School Calendar (PDF)</a>
+          </li>
+          <li>
+            <a href="#" className="underline">School Handbook (PDF)</a>
+          </li>
+        </ul>
 
-        <section>
-          <h2>Contact Us</h2>
-          <p>Have questions or need more information? Contact us using the form below or email us at <a href="mailto:info@houstonprivateschools.org">info@houstonprivateschools.org</a>.</p>
-        </section>
-
-        <section>
-          <h2>Visit Our Location</h2>
-          <p>Our physical location is not available at this time.</p>
-        </section>
-      </main>
-
-      <footer className="container py-4">
-        <p>&copy; 2023 Home in Houston, TX. All rights reserved.</p>
-      </footer>
+        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <p>
+          If you have any questions or need further assistance, please don't hesitate to reach out to us at{' '}
+          <a href="mailto:info@houstonprivateschools.org" className="underline">info@houstonprivateschools.org</a>
+        </p>
+      </div>
     </>
   );
 };
@@ -53,7 +56,9 @@ const DownloadPage = () => {
 export default DownloadPage;
 ```
 
-This is a basic JSX component for a Next.js page that generates a simple download page for Home in Houston, TX. It includes links to download a brochure and application forms, as well as a contact section and a visit our location section. The footer includes a copyright notice.
+This JSX code represents a basic download page for the Home in Houston, TX school. It includes sections for forms and documents, other resources, and contact information. The `Link` component from `next/link` is used to create a link to the email address. 
+
+You will need to replace the href values with actual URLs or file paths where the resources can be downloaded.
     </section>
   );
 }
