@@ -4,69 +4,67 @@ export default function Programs() {
       ```jsx
 import Head from 'next/head';
 
-const Programs = () => {
+function ProgramsPage() {
   return (
     <>
       <Head>
         <title>Programs | Home in Houston, TX</title>
-        <meta name="description" content="Discover the programs offered at Home in Houston, TX." />
+        <meta name="description" content="Learn about the programs offered at Home in Houston, TX." />
       </Head>
 
       <main>
-        <header>
-          <h1>Programs</h1>
-        </header>
+        <section className="hero">
+          <h1>Our Programs</h1>
+          <p>At Home in Houston, TX, we offer a range of programs designed to support the academic, personal, and social growth of our students.</p>
+        </section>
 
         <section className="programs">
-          <p>
-            At Home in Houston, TX, we offer a range of programs designed to cater to the diverse needs and interests of our students. Whether you're a preschooler, elementary, middle schooler, or high schooler, we have something for everyone.
-          </p>
-
-          <h2>Preschool Programs</h2>
+          <h2>Academic Programs</h2>
           <ul>
-            <li>Full-day and half-day programs for children aged 2-5 years</li>
-            <li>Focus on cognitive, social, emotional, and physical development</li>
-            <li>Play-based learning and hands-on activities</li>
+            <li>
+              <h3>Early Childhood Education (ECE)</h3>
+              <p>Our ECE program is designed for students aged 3-5 and focuses on developing social, emotional, and cognitive skills.</p>
+            </li>
+            <li>
+              <h3>Elementary Education</h3>
+              <p>Our elementary education program is designed for students aged 6-10 and focuses on developing foundational skills in reading, writing, and mathematics.</p>
+            </li>
+            <li>
+              <h3>Middle School</h3>
+              <p>Our middle school program is designed for students aged 11-14 and focuses on developing critical thinking and problem-solving skills.</p>
+            </li>
+            <li>
+              <h3>High School</h3>
+              <p>Our high school program is designed for students aged 14-18 and focuses on developing advanced critical thinking and problem-solving skills.</p>
+            </li>
           </ul>
 
-          <h2>Elementary Programs</h2>
+          <h2>Special Programs</h2>
           <ul>
-            <li>Grades K-5 programs focused on core subjects: reading, writing, math, science, and social studies</li>
-            <li>Integrated learning approach with hands-on activities and projects</li>
-            <li>Emphasis on developing critical thinking and problem-solving skills</li>
+            <li>
+              <h3>Enrichment Programs</h3>
+              <p>Our enrichment programs are designed to provide students with opportunities to explore their interests and talents outside of the regular curriculum.</p>
+            </li>
+            <li>
+              <h3>Support Programs</h3>
+              <p>Our support programs are designed to provide students with additional support and resources to help them succeed academically.</p>
+            </li>
           </ul>
+        </section>
 
-          <h2>Middle School Programs</h2>
-          <ul>
-            <li>Grades 6-8 programs with a focus on academic excellence and character development</li>
-            <li>Core subjects with a emphasis on critical thinking, research, and presentation skills</li>
-            <li>Electives in arts, music, and physical education</li>
-          </ul>
-
-          <h2>High School Programs</h2>
-          <ul>
-            <li>Grades 9-12 programs with a focus on academic rigor and college preparation</li>
-            <li>Core subjects with Advanced Placement (AP) and honors courses</li>
-            <li>Electives in arts, music, and physical education, as well as vocational training</li>
-          </ul>
-
-          <p>
-            We believe that every student is unique and deserves a personalized learning experience. Our programs are designed to foster academic excellence, character development, and social skills, while also promoting a love of learning and exploration.
-          </p>
-
-          <p>
-            If you're interested in learning more about our programs or would like to schedule a tour, please contact us at <a href="mailto:info@houstonprivateschools.org">info@houstonprivateschools.org</a>.
-          </p>
+        <section className="contact">
+          <h2>Get in Touch</h2>
+          <p>For more information about our programs, please contact us at <a href="mailto:info@houstonprivateschools.org">info@houstonprivateschools.org</a>.</p>
         </section>
       </main>
     </>
   );
-};
+}
 
-export default Programs;
+export default ProgramsPage;
 ```
 
-This JSX code generates a page for the programs offered by Home in Houston, TX. It includes a brief introduction, descriptions of the preschool, elementary, middle school, and high school programs, and a call to action to contact the school for more information. The code uses JSX syntax and includes a `Head` component for SEO optimization.
+This JSX code generates a basic layout for a programs page at Home in Houston, TX. The page includes a hero section with a heading and a brief description of the programs offered, followed by a section listing the academic programs and special programs. The contact section provides information on how to get in touch with the school.
     </section>
   );
 }
